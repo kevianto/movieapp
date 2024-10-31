@@ -27,16 +27,27 @@ function About() {
     console.log(data)
   }
   useEffect(()=>{
-    fetchmovie()
+    fetchmovie2()
   }, [])
   
   return (
-    <div>
-      hello movie {id}, {APIkey}
-      <p>{data?.Title}</p>
-      <img src={data?.Poster} alt="Movie poster" />
+    <div className='max-w-[55%] mx-auto my-45 p-8 gap-11 items-center justify-center max-h-[40%]'
+    style={{
+      backgroundImage: "url('https://img.freepik.com/free-vector/movie-film-strip-blue-background_1017-33458.jpg?semt=ais_hybrid')",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      minHeight: '100vh'
+    }}>
+     
+      
+      
+      
       <input type='text' className='bg-blue-200 p-4 text=lg' onChange = {e => handleCange(e)} placeholder='search by title' />
       <button className='bg-blue-500 text-white p-4' onClick={fetchmovie2}>Search movie</button>
+      <img src={data?.Poster} alt="Movie poster" className='my-45'/>
+      <p className='text-red-500 text-bold'>{data?.Title}</p>
+
     </div>
   )
 }

@@ -13,6 +13,7 @@ function Button(props) {
       
       <button className={`${Colors} m-11  text-white text-semibold p-3 rounded-md shadow-xl ${Butzize} h-[50px]`}
       onClick={()=> Navigate(`/movie/${props.id}`)}>{props.title}</button>
+      
     </div>
   )
 }
