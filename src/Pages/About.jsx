@@ -54,7 +54,7 @@ function About() {
           placeholder='Search by title'
         />
         <button
-          className='bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all duration-200'
+          className='bg-lime-500 text-white p-3 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all duration-200'
           onClick={fetchmovie2}
         >
           Search Movie
@@ -63,8 +63,11 @@ function About() {
       
       {data && (
         <div className='flex flex-col items-center mt-8 text-center max-w-md'>
+          <p className='text-pink-500 font-bold text-xl my-2 '>{data?.Title}</p>
+          <p className='text-gray-200 text-base'>{data?.Actors}</p>
+          <p className='text-gray-200 text-base'>{data?.Genre}</p>
           <img src={data?.Poster} alt="Movie poster" className='w-full max-h-96 rounded-md shadow-lg my-4' />
-          <p className='text-red-500 font-bold text-xl my-2'>{data?.Title}</p>
+          
           <p className='text-gray-200 text-base'>{data?.Plot}</p>
         </div>
       )}
