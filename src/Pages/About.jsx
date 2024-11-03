@@ -66,6 +66,7 @@ function About() {
           <p className='text-pink-500 font-bold text-xl my-2 '>{data?.Title}</p>
           <p className='text-gray-200 text-base'>{data?.Actors}</p>
           <p className='text-gray-200 text-base'>{data?.Genre}</p>
+          <p className='text-gray-200 text-base'>{data?.Type}</p>
           <img src={data?.Poster} alt="Movie poster" className='w-full max-h-96 rounded-md shadow-lg my-4' />
           
           <p className='text-gray-200 text-base'>{data?.Plot}</p>
