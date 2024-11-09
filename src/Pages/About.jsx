@@ -39,12 +39,7 @@ function About() {
   return (
     <div
       className='max-w-full mx-auto my-12 p-8 gap-8 flex flex-col items-center justify-center min-h-screen'
-      style={{
-        backgroundImage: "url('https://img.freepik.com/free-vector/movie-film-strip-blue-background_1017-33458.jpg?semt=ais_hybrid')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }}
+      
     >
       <div className='flex flex-col items-center gap-4'>
         <input
