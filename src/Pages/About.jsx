@@ -8,7 +8,7 @@ function About() {
 
   const handleChange = (e) => { // Corrected function name
     setTitle(e.target.value);
-    console.log(title);
+    console.log(title);//adding title of movie
   };
 
   const OMDBLink = import.meta.env.VITE_PUBLIC_OMDB_URL;
